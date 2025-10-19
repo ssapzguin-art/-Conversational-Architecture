@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SSA-2 Framework | Reflexive Architecture for AI</title>
+  <meta name="description" content="SSA-2: Dynamic Recursive Interaction Framework for Reflexive Language Models">
+  <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>SSA-2 Framework</h1>
+    <p><em>Dynamic Recursive Interaction for Reflexive Language Models</em></p>
+  </header>
+  <main>
+    <section>
+      <h2>Overview</h2>
+      <p>
+        SSA-2 expands the Self-Structural Awareness model into a dynamic, recursive framework.
+        It explores how user–AI interaction can produce adaptive reflexivity and evolving meta-logic.
+      </p>
+    </section>
+
+    <section>
+      <h2>Architecture</h2>
+      <div class="mermaid">
+      graph LR
+        A["User Input"]:::nodeStart --> B["Model Response"]:::node
+        B --> C["Adaptive Recursion"]:::node
+        C --> D["Meta-Loop Evolution"]:::node
+        D --> E["Co-Design Feedback"]:::nodeEnd
+        E --> A
+        classDef node fill:#e5e7eb,stroke:#1f2937,stroke-width:1px,color:#111;
+        classDef nodeStart fill:#bbf7d0,stroke:#166534,stroke-width:2px;
+        classDef nodeEnd fill:#93c5fd,stroke:#1e3a8a,stroke-width:2px;
+      </div>
+    </section>
+
+    <section>
+      <h2>Simulation Code</h2>
+      <pre><code>class SSA2Model:
+    def __init__(self):
+        self.state = "L0"
+        self.cycle = 0
+
+    def step(self, user_input):
+        self.cycle += 1
+        transitions = {
+            "L0": ("L1", "Reflection: analyzing reasoning behind response."),
+            "L1": ("L2", "Adaptive recursion: comparing loop structure."),
+            "L2": ("L3", "Meta-loop evolution: generating new structural rule."),
+            "L3": ("L4", "Co-design feedback: integrating user adjustment."),
+            "L4": ("L0", "Reset: stabilizing and returning to base interaction.")
+        }
+        self.state, output = transitions[self.state]
+        return f"[{self.state}] {output}"</code></pre>
+      <p>→ Run this in <code>model/SSA2_Simulator.py</code></p>
+    </section>
+
+    <section>
+      <h2>References</h2>
+      <ul>
+        <li>Human–AI Feedback Loops (Nature, 2025)</li>
+        <li>Introspective Growth: Reflexive Models (arXiv, 2025)</li>
+        <li>Human-Centered Interactive AI (arXiv, 2024)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>License</h2>
+      <p>MIT License © 2025 — Openly available for research and meta-architecture experimentation.</p>
+    </section>
+  </main>
+</body>
+</html>
